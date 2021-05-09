@@ -61,7 +61,7 @@ app.post("/failure", function (req, res) {
   res.redirect("/");
 });
 
-// process.env.PORT is for Heroku servers to choose a port, 3000 is localhost
+// process.env.PORT is Heroku servers during production, localhost:3000 is during development
 app.listen(process.env.PORT || 3000, function () {
   console.log("Server running on port 3000");
 });
